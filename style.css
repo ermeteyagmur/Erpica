@@ -72,6 +72,7 @@
   display: block;
 }
 
+
 /* Sayfa içeriği */
 main {
   max-width: 900px;
@@ -88,4 +89,66 @@ main h1 {
 main p {
   font-size: 18px;
   line-height: 1.6;
+}
+
+
+
+
+
+
+/* İletişim sayfası */
+.contact-page {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.contact-info p {
+  font-size: 18px;
+  margin: 8px 0;
+}
+
+.contact-info a {
+  color: #2ecc71;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+/* Form */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.contact-form label {
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.contact-form button {
+  margin-top: 15px;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  background: #2ecc71;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background: #3498db;
 }
