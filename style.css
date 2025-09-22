@@ -15,11 +15,11 @@ a:hover{color:var(--green)}
 header{position:sticky;top:0;z-index:1000}
 .navbar{
   display:flex;justify-content:space-between;align-items:center;
-  background:var(--green);padding:0 30px;min-height:64px;
+  background:var(--green);padding:10px 40px; height: 70px;
 }
 .logo img
 {
-  width: 200px;
+  width: 250px;
   display:block
 
 }
