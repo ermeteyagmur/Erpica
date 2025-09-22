@@ -13,6 +13,11 @@
   position: relative;
 }
 
+/* Logo */
+.logo img {
+  height: 50px;   /* Logonun boyutu */
+}
+
 .navbar a {
   color: white;
   text-decoration: none;
