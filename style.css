@@ -1,16 +1,16 @@
-/* Menü genel ayar */
+/* Genel menü */
 .navbar {
-  list-style: none;        /* Madde işaretlerini kaldır */
-  display: flex;           /* Yana hizala */
-  justify-content: center; /* Ortala */
+  list-style: none;
+  display: flex;
+  justify-content: center;
   margin: 0;
   padding: 0;
-  background: #2ecc71;     /* Yeşil arka plan */
+  background: #2ecc71; /* yeşil */
 }
 
 .navbar li {
   margin: 0 15px;
-  position: relative;      /* Dropdown için */
+  position: relative;
 }
 
 .navbar a {
@@ -22,11 +22,11 @@
 }
 
 .navbar a:hover {
-  background: #3498db; /* Hover mavi */
+  background: #3498db; /* mavi */
   border-radius: 5px;
 }
 
-/* Dropdown */
+/* Dropdown menü */
 .dropdown-content {
   display: none;
   position: absolute;
