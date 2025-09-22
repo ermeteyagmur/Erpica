@@ -17,7 +17,12 @@ header{position:sticky;top:0;z-index:1000}
   display:flex;justify-content:space-between;align-items:center;
   background:var(--green);padding:0 30px;min-height:64px;
 }
-.logo img{height:48px;width:auto;display:block}
+.logo img
+{
+  width: 200px;
+  display:block
+
+}
 
 /* Menü */
 .menu{list-style:none;display:flex;margin:0;padding:0}
