@@ -1,50 +1,43 @@
-/* Üst Menü */
-header {
-  background: #2ecc71; /* Yeşil */
-  padding: 10px 0;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
-
+/* Menü genel ayar */
 .navbar {
-  list-style: none;
-  display: flex;
-  justify-content: center;
+  list-style: none;        /* Madde işaretlerini kaldır */
+  display: flex;           /* Yana hizala */
+  justify-content: center; /* Ortala */
   margin: 0;
   padding: 0;
+  background: #2ecc71;     /* Yeşil arka plan */
 }
 
 .navbar li {
-  position: relative; /* dropdown için */
   margin: 0 15px;
+  position: relative;      /* Dropdown için */
 }
 
 .navbar a {
   color: white;
   text-decoration: none;
   font-weight: bold;
-  padding: 10px;
+  padding: 15px;
   display: block;
 }
 
 .navbar a:hover {
-  background: #3498db; /* Mavi */
+  background: #3498db; /* Hover mavi */
   border-radius: 5px;
 }
 
-/* Dropdown içerik */
+/* Dropdown */
 .dropdown-content {
   display: none;
   position: absolute;
-  top: 100%; /* menünün altına açılır */
+  top: 100%;
   left: 0;
   background: white;
   min-width: 160px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.15);
-  z-index: 1001;
   border-radius: 5px;
   padding: 0;
+  z-index: 1000;
 }
 
 .dropdown-content li {
@@ -62,7 +55,6 @@ header {
   color: #2ecc71;
 }
 
-/* Hover ile açılma */
 .dropdown:hover .dropdown-content {
   display: block;
 }
