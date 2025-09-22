@@ -1,28 +1,60 @@
-body {
-  font-family: Arial, sans-serif;
+/* Menü genel ayar */
+.navbar {
+  list-style: none;        /* Madde işaretlerini kaldır */
+  display: flex;           /* Yana hizala */
+  justify-content: center; /* Ortala */
   margin: 0;
   padding: 0;
-  line-height: 1.6;
+  background: #2ecc71;     /* Yeşil arka plan */
 }
 
-header {
-  background: #1a73e8;
+.navbar li {
+  margin: 0 15px;
+  position: relative;      /* Dropdown için */
+}
+
+.navbar a {
   color: white;
-  padding: 2rem;
-  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 15px;
+  display: block;
 }
 
-main {
-  padding: 2rem;
+.navbar a:hover {
+  background: #3498db; /* Hover mavi */
+  border-radius: 5px;
 }
 
-h2 {
-  color: #1a73e8;
+/* Dropdown */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  min-width: 160px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  border-radius: 5px;
+  padding: 0;
+  z-index: 1000;
 }
 
-footer {
+.dropdown-content li {
+  margin: 0;
+}
+
+.dropdown-content a {
+  color: #333;
+  padding: 10px;
+  font-weight: normal;
+}
+
+.dropdown-content a:hover {
   background: #f1f1f1;
-  text-align: center;
-  padding: 1rem;
-  margin-top: 2rem;
+  color: #2ecc71;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
