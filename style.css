@@ -12,26 +12,56 @@ a{color:var(--blue);text-decoration:none}
 a:hover{color:var(--green)}
 
 /* NAVBAR */
-header{position:sticky;top:0;z-index:1000}
-.navbar{
-  display:flex;justify-content:space-between;align-items:center;
-  background:var(--green);padding:10px 40px; height: 70px;
+/* Header */
+header {
+  position: absolute;    /* Sayfanın en üstünde sabit */
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background: transparent; /* Arka plan şeffaf */
+  z-index: 1000;          /* Üstte kalsın */
 }
-.logo img
-{
-  width: 250px;
-  display:block
 
+/* Logo boyutu */
+.logo img {
+  height: 70px;
+  width: auto;
 }
 
-/* Menü */
-.menu{list-style:none;display:flex;margin:0;padding:0}
-.menu li{position:relative;margin:0 10px}
-.menu > li > a{
-  color:#fff;font-weight:700;padding:12px 14px;display:block;border-radius:6px
+/* Menü yazıları */
+.menu a {
+  color: white;          /* Görselin üzerinde net dursun */
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 15px;
 }
-.menu > li > a:hover{background:var(--blue)}
 
+.menu a:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+}
+.hero {
+  height: 100vh; /* Tüm ekran yüksekliği */
+  background: url("arkaplan.jpg") no-repeat center center/cover; /* senin görselin */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 20px;
+}
 /* Dropdown */
 .dropdown-content{
   display:none;position:absolute;top:100%;left:0;min-width:200px;
