@@ -7,43 +7,61 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- HEADER -->
   <header>
-  <div class="container">
-    <div class="logo">
-      <img src="logo.png" alt="Erpica Logo">
+    <div class="container">
+      <div class="logo">
+        <a href="index.html"><img src="logo.png" alt="Erpica Logo"></a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Ana Sayfa</a></li>
+          <li>
+            <a href="#">Kurumsal</a>
+            <ul class="dropdown">
+              <li><a href="hakkimizda.html">Hakkımızda</a></li>
+              <li><a href="vizyon.html">Vizyon & Misyon</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="hizmetler.html">Hizmetler</a>
+            <ul class="dropdown">
+              <li><a href="#">Netsis</a></li>
+              <li><a href="#">E-Ticaret</a></li>
+              <li><a href="#">Özel Yazılım</a></li>
+              <li><a href="#">Web Tasarım</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Kampanyalar</a></li>
+          <li><a href="sss.html">S.S.S.</a></li>
+          <li><a href="iletisim.html">İletişim</a></li>
+        </ul>
+      </nav>
     </div>
-    <nav>
-      <ul>
-        <li><a href="index.html">Ana Sayfa</a></li>
-        <li>
-          <a href="#">Kurumsal ▾</a>
-          <ul class="dropdown">
-            <li><a href="hakkimizda.html">Hakkımızda</a></li>
-            <li><a href="vizyon.html">Vizyon & Misyon</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="#">Hizmetler ▾</a>
-          <ul class="dropdown">
-            <li><a href="netsis.html">Netsis</a></li>
-            <li><a href="eticaret.html">E-Ticaret</a></li>
-            <li><a href="ozelyazilim.html">Özel Yazılım</a></li>
-            <li><a href="webtasarim.html">Web Tasarım</a></li>
-          </ul>
-        </li>
-        <li><a href="kampanyalar.html">Kampanyalar</a></li>
-        <li><a href="iletisim.html">İletişim</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
+  </header>
 
   <!-- HERO -->
   <section class="hero">
-    <div class="hero-content">
-      <h1>ERPİCA YAZILIM’A HOŞGELDİNİZ</h1>
-      <p>İş süreçlerinizi dijitalleştiren modern, güvenilir ve ölçeklenebilir çözümler sunuyoruz.</p>
+    <h1>ERPİCA YAZILIM’A HOŞGELDİNİZ</h1>
+    <p>İş süreçlerinizi dijitalleştiren modern, güvenilir ve ölçeklenebilir çözümler sunuyoruz.</p>
+  </section>
+
+  <!-- HİZMETLER -->
+  <section class="services">
+    <div class="card">
+      <h3>İş Akış Sistemleri</h3>
+      <p>Şirketinize özel yazılım çözümleri.</p>
+    </div>
+    <div class="card">
+      <h3>Netsis Destek</h3>
+      <p>Netsis ERP kurulum, bakım ve destek.</p>
+    </div>
+    <div class="card">
+      <h3>E-Dönüşüm</h3>
+      <p>E-Fatura, e-Arşiv, e-İrsaliye entegrasyonları.</p>
+    </div>
+    <div class="card">
+      <h3>Danışmanlık</h3>
+      <p>Dijital dönüşüm ve teknoloji stratejileri.</p>
     </div>
   </section>
 </body>
