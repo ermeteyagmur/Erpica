@@ -44,10 +44,13 @@ nav ul li {
 }
 
 nav ul li a {
-  color: rgb(0, 0, 0);
+  color: #66ac64;
   text-decoration: none;
   font-weight: bold;
   font-size: 16px;
+  padding: 8px 12px;
+  transition: background 0.3s, color 0.03s;
+  border-radius: 6px; /* hover olunca kutu şekli olsun diye */
 }
 
 /* DROPDOWN */
@@ -56,14 +59,15 @@ nav ul li .dropdown {
   position: absolute;
   top: 100%;
   left: 0;
-  background: rgba(130, 214, 141, 0.8);
+  background: #398be9;
   padding: 10px;
   list-style: none;
   min-width: 150px;
 }
 
-nav ul li:hover .dropdown {
-  display: block;
+nav ul li a:hover {
+  background: #66ac64; 
+  color: white; /* yazı siyaha döner */
 }
 
 nav ul li .dropdown li {
@@ -78,7 +82,7 @@ nav ul li .dropdown li a {
 .hero {
   height: 100vh;
   background: linear-gradient(to bottom right, #ffffff, #ffffff);
-  color: rgb(209, 1, 1);
+  color: #66ac64;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -87,9 +91,9 @@ nav ul li .dropdown li a {
 }
 
 .hero h1 {
-  font-size: 48px;
+  font-size: 40px;
   margin-bottom: 20px;
-  color: #160707;
+  color: #66ac64;
 }
 
 .hero p {
@@ -108,7 +112,7 @@ nav ul li .dropdown li a {
 }
 
 .card {
-  background: #0616f1;
+  background: #7ece7b,#398be9;
   border-radius: 10px;
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -121,7 +125,7 @@ nav ul li .dropdown li a {
 }
 
 .card h3 {
-  color: #2e8b57;
+  color: #ffffff;
   margin-bottom: 10px;
 }
 
