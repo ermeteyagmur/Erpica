@@ -79,3 +79,22 @@ h1{font-size:28px} h2{font-size:22px}
   color:#fff;font-weight:700;cursor:pointer
 }
 .contact-form button:hover{background:var(--blue)}
+
+.hero {
+  height: 100vh;
+  background: linear-gradient(135deg, #2ecc71, #3498db);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 20px;
+}
