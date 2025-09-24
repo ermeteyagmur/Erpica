@@ -112,7 +112,7 @@ nav ul li .dropdown li a {
 }
 
 .card {
-  background: #7ece7b,#398be9;
+  background: #66ac64;
   border-radius: 10px;
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -145,7 +145,7 @@ nav ul li .dropdown li a {
 .contact h2 {
   font-size: 32px;
   margin-bottom: 20px;
-  color: #2e8b57;
+  color: #66ac64;
 }
 
 .contact p {
@@ -154,7 +154,7 @@ nav ul li .dropdown li a {
 }
 
 .contact a {
-  color: #2e8b57;
+  color: #66ac64;
   text-decoration: none;
   font-weight: bold;
 }
