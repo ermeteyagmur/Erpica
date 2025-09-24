@@ -6,42 +6,73 @@
 }
 
 /* Reset & genel */
-*{box-sizing:border-box}
-html,body{margin:0;padding:0;font-family:Arial,Helvetica,sans-serif;color:var(--text);line-height:1.6}
-a{color:var(--blue);text-decoration:none}
-a:hover{color:var(--green)}
+/* reset */
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif; }
 
-/* NAVBAR */
-header{position:sticky;top:0;z-index:1000}
-.navbar{
-  display:flex;justify-content:space-between;align-items:center;
-  background:var(--green);padding:10px 40px; height: 70px;
-}
-.logo img
-{
-  width: 250px;
-  display:block
 
+/* —— ŞEFFAF HEADER —— */
+.site-header{
+  position: fixed;      /* sayfanın üstünde sabit */
+  top: 0; left: 0; width: 100%;
+  background: transparent;   /* şeffaf */
+  z-index: 1000;
 }
+
+.nav{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 14px 28px;          /* header yüksekliği */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo img{
+  height: auto;                /* logoyu büyütmek/küçültmek için burayı değiştir */
+  width: 350px;
+}
+
 
 /* Menü */
-.menu{list-style:none;display:flex;margin:0;padding:0}
-.menu li{position:relative;margin:0 10px}
-.menu > li > a{
-  color:#fff;font-weight:700;padding:12px 14px;display:block;border-radius:6px
+.menu{
+  list-style: none;
+  display: flex;               /* yatay */
+  gap: 22px;
+  margin: 0;
+  padding: 0;
 }
-.menu > li > a:hover{background:var(--blue)}
+.menu > li { position: relative; }
+
+.menu > li > a{
+  color: #fff;                 /* hero üstünde beyaz */
+  text-decoration: none;
+  font-weight: 700;
+  padding: 10px 12px;
+  border-radius: 6px;
+  display: block;
+}
+.menu > li > a:hover{
+  background: rgba(255,255,255,.2);
+}
 
 /* Dropdown */
 .dropdown-content{
-  display:none;position:absolute;top:100%;left:0;min-width:200px;
-  background:#fff;border-radius:8px;box-shadow:0 10px 24px rgba(0,0,0,.12);
-  padding:8px 0
+  display: none;
+  position: absolute;
+  top: 100%; left: 0;
+  min-width: 200px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 10px 24px rgba(0,0,0,.15);
+  padding: 8px 0;
 }
-.dropdown-content li{list-style:none;margin:0}
-.dropdown-content a{display:block;padding:10px 14px;color:var(--text);font-weight:500}
-.dropdown-content a:hover{background:#f1f5f9;color:var(--green)}
-.dropdown:hover .dropdown-content{display:block}
+.dropdown-content li { list-style: none; }
+.dropdown-content a{
+  display: block; padding: 10px 14px;
+  color: #333; text-decoration: none; font-weight: 600;
+}
+.dropdown-content a:hover{ background: #f1f5f9; color: #2ecc71; }
+.dropdown:hover .dropdown-content{ display: block; }
 
 /* Sayfa iskeleti */
 main{max-width:1000px;margin:32px auto;padding:0 20px}
@@ -80,21 +111,34 @@ h1{font-size:28px} h2{font-size:22px}
 }
 .contact-form button:hover{background:var(--blue)}
 
-.hero {
-  height: 100vh;
-  background: linear-gradient(135deg, #2ecc71, #3498db);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.hero{
+  position: relative;
+  min-height: 100vh;
+  padding-top: 120px;          /* sabit header yüksekliği kadar boşluk */
+  background: #6cc070 url("arkaplan.jpg") center/cover no-repeat; /* resmi aynı klasöre koy veya img/arkaplan.jpg yap */
+}
+.hero::before{
+  content:"";                  /* okunabilirlik için koyu overlay */
+  position: absolute; inset: 0;
+  background: linear-gradient(180deg, rgba(0,0,0,.45), rgba(0,0,0,.25));
+}
+.hero-inner{
+  position: relative;          /* overlay üstünde */
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 60px 20px;
   text-align: center;
-  color: white;
+  color: #fff;
+  text-shadow: 0 2px 10px rgba(0,0,0,.5);
 }
+.hero h1{ font-size: 42px; margin: 0 0 14px; }
+.hero p { font-size: 18px; margin: 0; }
 
-.hero h1 {
-  font-size: 48px;
-  margin-bottom: 20px;
-}
+/* sayfanın devamı */
+.page{ max-width: 1100px; margin: 40px auto; padding: 0 20px; }
 
-.hero p {
-  font-size: 20px;
+/* mobil düzen */
+@media (max-width: 900px){
+  .logo img{ height: 56px; }
+  .menu{ gap: 12px; }
 }
