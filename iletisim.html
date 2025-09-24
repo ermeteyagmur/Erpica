@@ -7,65 +7,43 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <!-- ORTAK HEADER -->
-<header>
-  <nav class="navbar">
-    <div class="logo">
-      <img src="logo.png" alt="Erpica Logo">
-    </div>
-
-    <ul class="menu">
-      <li><a href="index.html">Ana Sayfa</a></li>
-
-      <li class="dropdown">
-        <a href="#">Kurumsal ▾</a>
-        <ul class="dropdown-content">
-          <li><a href="hakkimizda.html">Hakkımızda</a></li>
-          <li><a href="vizyon.html">Vizyon & Misyon</a></li>
-        </ul>
-      </li>
-
-      <li class="dropdown">
-        <a href="#">Hizmetler ▾</a>
-        <ul class="dropdown-content">
-          <li><a href="netsis.html">Netsis</a></li>
-          <li><a href="eticaret.html">E-Ticaret</a></li>
-          <li><a href="ozelyazilim.html">Özel Yazılım</a></li>
-          <li><a href="webtasarim.html">Web Tasarım</a></li>
-        </ul>
-      </li>
-
-      <li><a href="kampanyalar.html">Kampanyalar</a></li>
-      <li><a href="iletisim.html">İletişim</a></li>
-    </ul>
-  </nav>
-</header>
-
-  <main>
-    <section class="card">
-      <h1>İletişim</h1>
-      <p>Aşağıdaki bilgilerden bize ulaşabilirsiniz:</p>
-
-      <div class="contact-info">
-        <p>📞 Telefon: <a href="tel:+905330828824">0533 082 88 24</a></p>
-        <p>📧 E-posta: <a href="mailto:info@erpicayazilim.com">info@erpicayazilim.com</a></p>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <a href="index.html"><img src="logo.png" alt="Erpica Logo"></a>
       </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Ana Sayfa</a></li>
+          <li>
+            <a href="#">Kurumsal</a>
+            <ul class="dropdown">
+              <li><a href="hakkimizda.html">Hakkımızda</a></li>
+              <li><a href="vizyon.html">Vizyon & Misyon</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="hizmetler.html">Hizmetler</a>
+            <ul class="dropdown">
+              <li><a href="#">Netsis</a></li>
+              <li><a href="#">E-Ticaret</a></li>
+              <li><a href="#">Özel Yazılım</a></li>
+              <li><a href="#">Web Tasarım</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Kampanyalar</a></li>
+          <li><a href="sss.html">S.S.S.</a></li>
+          <li><a href="iletisim.html">İletişim</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-      <h2>İletişim Formu</h2>
-      <form class="contact-form">
-        <label for="name">Ad Soyad</label>
-        <input id="name" name="name" required>
-
-        <label for="email">E-posta</label>
-        <input type="email" id="email" name="email" required>
-
-        <label for="message">Mesajınız</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
-
-        <button type="submit">Gönder</button>
-      </form>
-    </section>
-  </main>
+  <section class="contact">
+    <h2>İletişim</h2>
+    <p>Aşağıdaki bilgilerden bize ulaşabilirsiniz:</p>
+    <p>📞 Telefon: <a href="tel:05330828824">0533 082 88 24</a></p>
+    <p>📧 E-posta: <a href="mailto:info@erpicayazilim.com">info@erpicayazilim.com</a></p>
+  </section>
 </body>
 </html>
