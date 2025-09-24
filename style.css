@@ -1,7 +1,7 @@
 /* Genel ayarlar */
 body {
   margin: 0;
-  padding-top: 80px; /* header sabit, içerik aşağı kaymasın */
+  padding-top: 100px; /* header sabit, içerik aşağı kaymasın */
   font-family: Arial, sans-serif;
 }
 
@@ -12,21 +12,30 @@ header {
   left: 0;
   width: 100%;
   background: transparent;
+  z-index: 1000;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+/* Header içerik kutusu */
+header .container {
+  max-width: 1200px;   /* sayfa genişliği sınırlı */
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 40px;
-  z-index: 1000;
+  padding: 10px 20px;
 }
 
 .logo img {
-  height: 60px; /* logo boyutu */
+  height: auto; /* logo daha büyük */
+  width: 350px;
 }
 
+/* MENÜ */
 nav ul {
   list-style: none;
   display: flex;
-  gap: 20px;
+  gap: 25px;
   margin: 0;
   padding: 0;
 }
@@ -39,6 +48,7 @@ nav ul li a {
   color: white;
   text-decoration: none;
   font-weight: bold;
+  font-size: 16px;
 }
 
 /* DROPDOWN */
@@ -50,6 +60,7 @@ nav ul li .dropdown {
   background: rgba(0,0,0,0.8);
   padding: 10px;
   list-style: none;
+  min-width: 150px;
 }
 
 nav ul li:hover .dropdown {
@@ -67,7 +78,7 @@ nav ul li .dropdown li a {
 /* HERO */
 .hero {
   height: 100vh;
-  background: linear-gradient(to bottom right, #1e3c27, #0f1f13);
+  background: linear-gradient(to bottom right, #90ad99, #9ebda6);
   color: white;
   display: flex;
   justify-content: center;
@@ -79,7 +90,7 @@ nav ul li .dropdown li a {
 .hero h1 {
   font-size: 48px;
   margin-bottom: 20px;
-  color: #7CFC00; /* canlı yeşil */
+  color: #fbfbfb; 
 }
 
 .hero p {
