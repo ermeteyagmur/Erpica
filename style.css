@@ -26,8 +26,8 @@ header .container {
 }
 
 .logo img {
-  height: auto;
-  width: 200px;
+  height: 80px;
+  width: auto;
 }
 
 /* NAVIGATION */
