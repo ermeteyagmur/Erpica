@@ -111,12 +111,16 @@ h1{font-size:28px} h2{font-size:22px}
 }
 .contact-form button:hover{background:var(--blue)}
 
-.hero{
-  position: relative;
-  min-height: 100vh;
-  padding-top: 120px;          /* sabit header yüksekliği kadar boşluk */
-  background: #6cc070 url("arkaplan.jpg") center/cover no-repeat; /* resmi aynı klasöre koy veya img/arkaplan.jpg yap */
+.hero {
+  height: 100vh;
+  background: radial-gradient(circle at top, #2ecc71, #1a1a1a);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
 }
+
 .hero::before{
   content:"";                  /* okunabilirlik için koyu overlay */
   position: absolute; inset: 0;
