@@ -1955,7 +1955,7 @@ input, select, textarea {
 		}
 		
 	#logo img {
-  width: 240px;    
+  width: 400px;    
   height: auto;     
   display: inline-block;
   vertical-align: middle;
@@ -2273,6 +2273,11 @@ input, select, textarea {
 				margin: 0 auto;
 			}
 
+			#header .container {
+            display: flex;
+  			align-items: center;  
+  			justify-content: space-between;
+}
 		/* Logo */
 
 			#logo span {
