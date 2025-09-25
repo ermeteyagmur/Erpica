@@ -1949,6 +1949,10 @@ input, select, textarea {
 			display: inline-block;
 			vertical-align: middle;
 		}
+		#logo img {
+  width: 350px;  
+  height: auto;
+}
 
 		#logo span {
 			font-weight: 200;
