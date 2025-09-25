@@ -1499,7 +1499,9 @@ input, select, textarea {
 	form input[type="password"],
 	form select,
 	form textarea {
+		appearance: none;
 		-webkit-appearance: none;
+		-moz-appearance: none;
 		display: block;
 		width: 100%;
 		border-radius: 8px;
@@ -1631,7 +1633,9 @@ input, select, textarea {
 		-webkit-transition: background-color .25s ease-in-out;
 		-ms-transition: background-color .25s ease-in-out;
 		transition: background-color .25s ease-in-out;
+		appearance: none;
 		-webkit-appearance: none;
+		-moz-appearance: none;
 		position: relative;
 		display: inline-block;
 		background: #0090c5;
@@ -1936,7 +1940,7 @@ input, select, textarea {
 	#logo {
 		display: inline-block;
 	}
-
+/*
 		#logo h1 {
 			background: transparent;
 			color: #fff;
@@ -1949,6 +1953,7 @@ input, select, textarea {
 			display: inline-block;
 			vertical-align: middle;
 		}
+			*/
 		#logo img {
   width: 350px;  
   height: auto;
