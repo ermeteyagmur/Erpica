@@ -1940,7 +1940,7 @@ input, select, textarea {
 	#logo {
 		display: inline-block;
 	}
-/*
+
 		#logo h1 {
 			background: transparent;
 			color: #fff;
@@ -1953,17 +1953,19 @@ input, select, textarea {
 			display: inline-block;
 			vertical-align: middle;
 		}
-			*/
-		#logo img {
-  width: 350px;  
-  height: auto;
+		
+	#logo img {
+  width: 140px;    
+  height: auto;     
+  display: inline-block;
+  vertical-align: middle;
 }
 
 		#logo span {
 			font-weight: 200;
-			line-height: 4.5em;
+			line-height: 1.2em;
 			letter-spacing: 0.025em;
-			font-size: 0.9em;
+			font-size: 0.85em;
 			vertical-align: middle;
 			margin: 0 0 0 1.25em;
 		}
