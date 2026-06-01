@@ -17,7 +17,7 @@
     <loc>https://www.erpicayazilim.com/blog</loc>
     <lastmod>2026-06-01</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.erpicayazilim.com/iletisim</loc>
@@ -25,6 +25,8 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+
+  <!-- Hizmet sayfaları -->
   <url>
     <loc>https://www.erpicayazilim.com/netsis-erp</loc>
     <lastmod>2026-06-01</lastmod>
@@ -61,6 +63,46 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+
+  <!-- Blog yazıları -->
+  <url>
+    <loc>https://www.erpicayazilim.com/blog/netsis-erp-nedir</loc>
+    <lastmod>2026-06-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.erpicayazilim.com/blog/logo-flow-is-akisi-yonetimi</loc>
+    <lastmod>2026-06-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.erpicayazilim.com/blog/logo-j-hr-insan-kaynaklari-dijitallesmesi</loc>
+    <lastmod>2026-06-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.erpicayazilim.com/blog/logo-mind-insight-raporlama-ve-is-zekasi</loc>
+    <lastmod>2026-06-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.erpicayazilim.com/blog/erp-seciminde-dikkat-edilmesi-gerekenler</loc>
+    <lastmod>2026-06-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.erpicayazilim.com/blog/erp-destek-hizmeti-neden-onemlidir</loc>
+    <lastmod>2026-06-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Yasal sayfalar -->
   <url>
     <loc>https://www.erpicayazilim.com/kvkk</loc>
     <lastmod>2026-06-01</lastmod>
